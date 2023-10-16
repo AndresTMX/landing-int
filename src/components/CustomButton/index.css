@@ -1,0 +1,53 @@
+/*/
+general
+*/
+
+.button{
+    width: 100%;
+    max-width: 300px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 32px;
+    padding: 16px 28px;
+    cursor: pointer;
+    text-align: center;
+    @media (max-width:900px) {
+        max-width: 420px;
+      }
+}
+
+/*/
+variants
+*/
+
+.solid{
+    background-color: #585DCC;
+}
+
+.border{
+    border: 1px solid #585DCC;
+    background-color: white;
+}
+
+
+/*/
+types
+*/
+
+.primary{
+    background-color: #585DCC;
+    color: white;
+}
+
+.secondary{
+    background-color: white;
+    color: #2A2FAB;
+}
+
+.link{
+    background-color: #585DCC;
+    color: white;
+}
+
+
+

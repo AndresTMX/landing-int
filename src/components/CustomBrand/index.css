@@ -1,0 +1,44 @@
+
+.icon-brand{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight:500;
+    gap:15px;
+    height: fit-content;
+  }
+
+  /*
+  vaiants sizing
+  */
+
+  .small{
+    font-size: 1rem;
+  }
+
+  .medium{
+    font-size: 2rem;
+  }
+
+  .big{
+    font-size: 3rem;
+    @media (max-width:900px) {
+      font-size: 1.5rem;
+      position: relative;
+      left: 5%;
+    }
+  }
+
+  /*
+  vaiants sizing icon
+  */
+
+  .icon{
+    height: 50px;
+    @media (max-width:900px) {
+      height: 30px;
+    }
+  }
+
+
+

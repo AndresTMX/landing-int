@@ -1,0 +1,28 @@
+.register-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.register-form div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.register-form div label{
+    color: black;
+}
+
+.register-form div input{
+    background-color: white;
+    border: none;
+    padding: 16px;
+    border-bottom: 1px solid gray;
+    color: black;
+}
+
+
+
+
+

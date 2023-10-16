@@ -1,0 +1,144 @@
+.register-main{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    flex-wrap: wrap;
+    background-color: white;
+    min-height: 100vh;
+    @media (max-width:900px) {
+        flex-direction: column;
+        justify-content: center;
+    }
+  
+}
+
+.register-main span{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.register-container{
+    display: flex;
+    gap: 10%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    min-width: 500px;
+    min-height: 100vh;
+    @media (max-width:1000px) {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.color-brand{
+    background-color: #585DCC;
+}
+
+.register-container-brand{
+    width: 100%;
+}
+
+.register-container article{
+    max-width: 600px;
+    padding: 50px 0px 50px;
+    gap: 20px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 500px;
+    @media (max-width:1300px) {
+       padding: 0px 0px 0px;
+       margin: 0px;
+       position: relative;
+       left: -10%;
+    }
+}
+
+.register-container article h1{
+    font-size: 3.5rem;
+    @media (max-width:1300px) {
+        font-size: 2.5rem;
+        max-width: 500px;
+    }
+    @media (max-width:700px) {
+        font-size: 2rem;
+        max-width: 400px;
+    }
+    @media (max-width:500px) {
+        font-size: 1.5rem;
+        max-width: 350px;
+    }
+
+}
+
+.register-container article p {
+    max-width: 450px;
+    @media (max-width:700px) {
+        max-width: 400px;
+    }
+    @media (max-width:500px) {
+        max-width: 320px;
+    }
+}
+
+.register-container h2{
+   color: #585DCC;
+}
+
+.text {
+    font-size: 1.2rem;
+    color: black;
+    max-width: 450px;
+    line-height: 1.5rem;
+}
+
+.firma{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    @media (max-width:1000px) {
+        left: 0px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.nav{
+    position: absolute;
+    top: 10px;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    @media (max-width:700px) {
+        max-width: 300px;
+    }
+  }
+
+.box-right{
+    display: flex;
+    width: 50%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    @media (max-width:1000px) {
+        flex-direction: column;
+        width: 100%;
+    }
+  }
+
+.box-right article{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box-right article h2{
+    color: #585DCC;
+}
