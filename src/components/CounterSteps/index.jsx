@@ -14,7 +14,7 @@ function CounterSteps({arraySteps}) {
       <>
         <section className="counterStep-container">
           {arraySteps.map((step, index) => (
-            <div className='stepBox'>
+            <div key={index} className='stepBox'>
                 {(index + 1) % 2 === 0 && (<span className="line">
                    {'--------------- ->'}
                 </span>)}

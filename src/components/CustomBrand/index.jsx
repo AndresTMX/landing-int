@@ -29,21 +29,21 @@ function CustomBrand ({variant, size}) {
 
         {customVariant === 'original' && (
             <picture className={`icon-brand ${customVariant} ${customSize}`}>
-            <img height="50px" src="Elice.svg" />
+            <img height="50px" src="Elice.svg" alt='icon' />
             INT
           </picture>
         )}
 
          {customVariant === 'white' && (
             <picture className={`icon-brand ${customVariant} ${customSize}`}>
-            <img className='icon' src="Elice-white.svg" />
+            <img className='icon' src="Elice-white.svg" alt='icon' />
             INT
           </picture>
         )}
 
          {customVariant === 'star' && (
             <picture className={`${customVariant} ${customSize}`}>
-            <img height="80px" src="Elice-white-star.svg" />
+            <img height="80px" src="Elice-white-star.svg" alt='icon' />
           </picture>
         )}
         

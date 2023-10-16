@@ -12,11 +12,11 @@ function SocialMediaIcons({variant}) {
         {customVariant === 'all' && (
           <div className="icons-container">
             <a href={instagram}>
-              <img src="instagram-icon.svg" />
+              <img src="instagram-icon.svg" alt='icon'/>
             </a>
 
             <a href={linkedin}>
-              <img src="linkedin-icon.svg" />
+              <img src="linkedin-icon.svg" alt='icon'/>
             </a>
           </div>
         )}
@@ -24,7 +24,7 @@ function SocialMediaIcons({variant}) {
         {customVariant === 'linkedin' && (
           <div className="icons-container">
             <a href={linkedin}>
-              <img src="linkedin-icon.svg" />
+              <img src="linkedin-icon.svg" alt='icon'/>
             </a>
           </div>
         )}
@@ -32,7 +32,7 @@ function SocialMediaIcons({variant}) {
         {customVariant === 'instagram' && (
           <div className="icons-container">
             <a href={instagram}>
-              <img src="instagram-icon.svg" />
+              <img src="instagram-icon.svg" alt='icon' />
             </a>
           </div>
         )}
