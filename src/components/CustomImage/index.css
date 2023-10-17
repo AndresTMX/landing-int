@@ -5,7 +5,6 @@ General
 
 .picture{
     display: flex;
-    position: relative;
     z-index: 2;
     @media (max-width:1100px) {
         top: -100px;
@@ -41,29 +40,21 @@ General
 }
 
 
-.small{
+.small-image{
     height: 30%;
     width: 30%;
 }
 
-.medium{
+.medium-image{
     height: 50%;
     width: 30%;
 }
 
-.big{
+.big-image{
     height: 100%;
     max-height: 500px;
     min-height: 200px;
     width: 100%;
-    @media (max-width:1450px) {
-        height:400px;
-        width: 400px;
-      }
-    @media (max-width:1100px) {
-        height:300px;
-        width: 300px;
-    }
 }
 
 .transform{

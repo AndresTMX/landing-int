@@ -4,40 +4,42 @@ import './index.css'
 import { CustomImage } from '@/components/CustomImage';
 import { CustomBrand } from '@/components/CustomBrand';
 import { SocialMediaIcons } from '@/components/SocialMediaIcons';
+import { Nav } from '@/components/Nav';
 
 export default function Thanks() {
   return (
+   <>
+   <div className='thanks-nav'>
+     <Nav/>
+   </div>
     <main className="thanks-main">
-      
-      <div className="container-brand">
-        <CustomBrand variant="original" size="big" />
-      </div>
+      <div className="thanks-container">
 
-      <section className='thanks-container'>
-      <div className="thanks-container-text">
-        <span>¡Muchas gracias por registrarte!</span>
-        <h1>
-          Nos pondremos en contacto muy <br /> pronto
-        </h1>
+        <section className="thanks-container-text">
+          <CustomBrand variant="original" size="big" />
+          <span>¡Muchas gracias por registrarte!</span>
+          <h1>
+            Nos pondremos en <br /> contacto muy <br /> pronto
+          </h1>
 
-        <div className="thanks-footer">
           <span>Visita nuestras redes sociales</span>
-          <SocialMediaIcons />
-        </div>
+          <div className="thanks-footer">
+            <SocialMediaIcons />
+          </div>
+        </section>
+
+        <section className="thanks-container-image">
+          <div className='thanks-image'>
+          <CustomImage
+            url={"https://i.postimg.cc/rFBdRSX1/Iphone.png"}
+            position="center"
+            size="big-image"
+            variant="brand"
+          />
+          </div>
+        </section>
       </div>
-
-      <div className="thanks-container-image">
-        <CustomImage
-          url={"https://i.postimg.cc/rFBdRSX1/Iphone.png"}
-          position="center"
-          size="big"
-          variant="brand"
-        />
-      </div>
-
-      </section>
-
-
     </main>
+   </>
   );
 }

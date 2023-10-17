@@ -1,15 +1,20 @@
 import './index.css'
 import { RegisterForm } from '@/components/RegisterForm';
 import { CustomBrand } from '@/components/CustomBrand';
+import { Nav } from '@/components/Nav';
 
 export default function registro() {
 
   return (
+   <>
+   <div className='register-nav'>
+     <Nav/>
+   </div>
     <main className='register-main'>
       <div className='register-container color-brand'>
-        <nav className='nav'>
+        {/* <nav className='nav'>
           <CustomBrand variant='white' size='medium'/>
-        </nav>
+        </nav> */}
 
         <article>
           <div className='register-container-brand'>
@@ -35,5 +40,6 @@ export default function registro() {
       </div>
 
     </main>
+   </>
   );
 }

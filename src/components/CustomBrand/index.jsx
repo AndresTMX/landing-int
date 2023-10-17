@@ -11,39 +11,32 @@ import './index.css'
   
   - star : logo con estrellas 
 
-  size hace referencia al tamaño 
-
-  - small : texto de 1 rem
-
-  - medium : texto de 2 rem
-  
-  - big : texto de 3 rem
-
   */
 
-function CustomBrand ({variant, size}) {
+function CustomBrand ({variant, size, height}) {
     const customVariant = variant? variant : 'original'
-    const customSize = size? size : 'medium'
+    const customSize = size? size : '2rem'
+    const customHeightIcon = height? height: '50px'
     return ( 
         <>
 
         {customVariant === 'original' && (
             <picture className={`icon-brand ${customVariant} ${customSize}`}>
-            <img height="50px" src="Elice.svg" alt='icon' />
+            <img height={customHeightIcon} src="Elice.svg" alt='icon' />
             INT
           </picture>
         )}
 
          {customVariant === 'white' && (
             <picture className={`icon-brand ${customVariant} ${customSize}`}>
-            <img className='icon' src="Elice-white.svg" alt='icon' />
+            <img height={customHeightIcon} src="Elice-white.svg" alt='icon' />
             INT
           </picture>
         )}
 
          {customVariant === 'star' && (
             <picture className={`${customVariant} ${customSize}`}>
-            <img height="80px" src="Elice-white-star.svg" alt='icon' />
+            <img height={customHeightIcon} src="Elice-white-star.svg" alt='icon' />
           </picture>
         )}
         
