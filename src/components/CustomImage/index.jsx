@@ -22,10 +22,12 @@ function CustomImage({url, position, size, variant}) {
     const customSize = size? size: 'medium'
     const customVariant = variant? variant : 'brand'
 
-    return ( 
+    return (
+      <>    
         <picture className={`picture  ${customSize} ${customVariant} ${customPosition}`}>
             <img src={url} className={`transform  ${customSize}`} alt='Error al cargar'/>
           </picture>
+      </> 
      );
 }
 

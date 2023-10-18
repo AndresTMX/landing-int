@@ -49,5 +49,12 @@ types
     color: white;
 }
 
+.icon{
+    background-color: white;
+    color: #2A2FAB;
+    width: 130px;
+    border-radius: 20px;
+    font-size: 2rem;
+}
 
 

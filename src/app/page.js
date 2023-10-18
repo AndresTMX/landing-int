@@ -1,14 +1,23 @@
 import './index.css'
+
 //components
+import { Nav } from '@/components/Nav';
 import { Chips } from '@/components/Chips';
 import { CustomButton } from '@/components/CustomButton';
-import { CustomImage } from '@/components/CustomImage';
 import { CounterSteps } from '@/components/CounterSteps';
-import { Nav } from '@/components/Nav';
 import { CustomBrand } from '@/components/CustomBrand';
+import { AnimateImages } from '@/components/AnimateImages';
 
-const arrayChips = ['sin mensualidades', 'infansificable', 'intuitiva' ]
-const arraySteps = ['Registrate', 'Crea tu tienda', 'Compartela al mundo']
+const arrayChips = ['sin mensualidades', 'infalsificable', 'intuitiva' ]
+const arraySteps = ['Registrate', 'Crea tu tienda', 'Compártela']
+const images = [
+  "https://i.postimg.cc/2jTchVK4/int-1.png",
+  "https://i.postimg.cc/Gh5Xg6rt/int-2.png",
+  "https://i.postimg.cc/Wb39nTBx/int-3.png",
+  "https://i.postimg.cc/CKymSDRV/int-4.png",
+  "https://i.postimg.cc/KYnQzzT3/int-5.png",
+  "https://i.postimg.cc/YCLb58q3/int-6.png",
+];
 
 export default function Home() {
   return (
@@ -37,12 +46,7 @@ export default function Home() {
 
         {/* cotenedor de imagen */}
         <div className={"home-containerImage"}>
-          <CustomImage
-            url={"https://i.postimg.cc/rFBdRSX1/Iphone.png"}
-            position="center"
-            size="big-image"
-            variant="brand"
-          />
+          <AnimateImages arrayImages={images}/>
         </div>
       </div>
 

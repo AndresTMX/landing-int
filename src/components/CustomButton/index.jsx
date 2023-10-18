@@ -1,24 +1,8 @@
 "use client"
 import './index.css'
+import Link from 'next/link'
 
-  /*
-  CustomButton recibe :
-
-  text: el texto dentro del boton
-
-  type: el tipo de boton que es
-
-  - solid: color solido letras blancas
-
-  - border: blanco con borde coloreado
-
-  - disable: boton desabilitado
-
-  - link : boton de color solido que recibe referencia 
-  
-  */
-
-function CustomButton ({text, type, variant , referencia, onClick}) {
+function CustomButton ({text, type, variant , referencia, onClick, icon}) {
     const typeButton = type? type : 'solid'
     const variantButton = variant? variant : 'primary'
     const Click = () => {
@@ -41,8 +25,12 @@ function CustomButton ({text, type, variant , referencia, onClick}) {
             <button onClick={Click} className={`button ${variantButton} ${typeButton}`}>{text}</button>
         )}
 
+        {typeButton === 'icon' && (
+            <button onClick={Click} className={`button ${variantButton} ${typeButton}`}>{icon}</button>
+        )}
+
         {typeButton === 'link' && (
-            <a href={referencia} className={`button ${variantButton} ${typeButton}`}>{text}</a>
+            <Link href={referencia} className={`button ${variantButton} ${typeButton}`}>{text}</Link>
         )} 
         
         </>

@@ -1,4 +1,6 @@
 import './globals.css'
+import './index.css'
+
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -16,7 +18,7 @@ export default function RootLayout({ children }) {
         <meta charSet='utf-8'/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className={`body-background ${inter.className}` }>{children}</body>
+      <body className={`body-background ${inter.className}`}>{children}</body>
     </html>
   )
 }

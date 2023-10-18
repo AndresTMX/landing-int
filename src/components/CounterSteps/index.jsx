@@ -16,7 +16,7 @@ function CounterSteps({arraySteps}) {
           {arraySteps.map((step, index) => (
             <div key={index} className='stepBox'>
                 {(index + 1) % 2 === 0 && (<span className="line">
-                   {'--------------- ->'}
+                   {'------------ ->'}
                 </span>)}
               <div className="step">
                 <span className="circle">{index + 1}</span>
@@ -24,7 +24,7 @@ function CounterSteps({arraySteps}) {
               </div>
               {(index + 1) % 2 === 0 && 
               (<span className="line">
-                    {'--------------- ->'}
+                    {'------------ ->'}
                 </span>)}
             </div>
           ))}

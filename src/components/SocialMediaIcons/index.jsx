@@ -1,4 +1,5 @@
 import './index.css'
+import Image from 'next/image'
 
 function SocialMediaIcons({variant}) {
 
@@ -12,11 +13,11 @@ function SocialMediaIcons({variant}) {
         {customVariant === 'all' && (
           <div className="icons-container">
             <a href={instagram}>
-              <img src="instagram-icon.svg" alt='icon'/>
+              <Image width={'50'} height={'50'} src="instagram-icon.svg" alt='icon'/>
             </a>
 
             <a href={linkedin}>
-              <img src="linkedin-icon.svg" alt='icon'/>
+              <Image width={'50'} height={'50'} src="linkedin-icon.svg" alt='icon'/>
             </a>
           </div>
         )}
@@ -24,7 +25,7 @@ function SocialMediaIcons({variant}) {
         {customVariant === 'linkedin' && (
           <div className="icons-container">
             <a href={linkedin}>
-              <img src="linkedin-icon.svg" alt='icon'/>
+              <Image width={'50'} height={'50'} src="linkedin-icon.svg" alt='icon'/>
             </a>
           </div>
         )}
@@ -32,7 +33,7 @@ function SocialMediaIcons({variant}) {
         {customVariant === 'instagram' && (
           <div className="icons-container">
             <a href={instagram}>
-              <img src="instagram-icon.svg" alt='icon' />
+              <Image src="instagram-icon.svg" alt='icon' />
             </a>
           </div>
         )}
